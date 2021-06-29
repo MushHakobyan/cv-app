@@ -2,7 +2,7 @@
     <h2 class="m-ml-1">LANGUAGES</h2>
     <div class="m-content m-p-1 m-d-grid m-g-gap-1 m-gt-columns-2">
         <div v-for="lang in langs" :key="lang.id">
-        <h4 class="m-m-0">{{lang.name}}</h4>
+        <h3 class="m-m-0">{{lang.name}}</h3>
         <i class="m-text-primary">{{lang.level}}</i>
         </div>
     </div>

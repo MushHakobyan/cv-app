@@ -1,7 +1,7 @@
 <template>
   <ul>
     <li v-for="info in infos" :key="info.id">
-      <a :href="info.link" target="_blank">{{info.info}}</a>
+      <a :href="info.link" rel="noopener" target="_blank">{{info.info}}</a>
       <span class="m-icon m-jc-center m-ml-0-5"><i :class="info.icon" class="m-text-shadow m-text-primary"></i></span>
     </li>
   </ul>

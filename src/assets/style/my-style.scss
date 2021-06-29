@@ -1,7 +1,6 @@
 html, body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    font-size: 16px;
     min-height: 100vh;
     line-height: 1.5;
     .container {
@@ -9,12 +8,8 @@ html, body {
       background-color: #27272710;
       transform-style: preserve-3d;
       transition: 0.2s;
-      h1,h2,h3,h4,span.m-bg-primary, span.m-border, i.fas,i.fab { transform: translateZ(32px) }
+      h1,h2,h3,span.m-bg-primary, span.m-border, i.fas,i.fab { transform: translateZ(32px) }
       img { transform: translateZ(64px) }
-    }
-    figure {
-      box-shadow: 0 0 100px #27272780!important;
-      background-color: #27272730;
     }
     ul {
       list-style: none;
