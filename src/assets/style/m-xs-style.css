@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+    .m-xs-fd-column { flex-direction: column }
+    .m-xs-m-0 { margin: 0 }
+    .m-xs-ai-center { align-items: center }
+    .m-xs-text-center { text-align: center }
+    .m-xs-d-none { display: none }
+  }
