@@ -21,7 +21,7 @@
 .m-mx-auto { margin-inline: auto }
 .m-my-2 { margin-block: 2rem }
 .m-size-128 { width: 128px }
-.m-height-128 { height: 128px };
+.m-height-128 { height: 128px }
 .m-avatar-img { aspect-ratio: 1 / 1; object-fit: cover }
 .m-rounded { border-radius: 100% }
 .m-border-bl-10 { border-bottom-left-radius: 10%;}
