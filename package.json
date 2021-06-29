@@ -6,7 +6,6 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "primeicons": "^4.1.0",
     "vue": "^3.0.5"
   },
   "devDependencies": {
