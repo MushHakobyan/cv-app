@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
 import Avatar from './components/Avatar.vue'
 import Education from './components/Education.vue'
@@ -35,12 +35,32 @@ import Info from './components/Info.vue'
 import Interests from './components/Interests.vue'
 import Skills from './components/Skills.vue'
 import Languages from './components/languages.vue'
-const effect3d = ref(false)
-const container = ref(null)
-function rotate(e) {
-  if (effect3d.value) {
-    container.value.style.transform = `rotateX(${(innerHeight/2-e.y)/20}deg) rotateY(${(e.x-innerWidth/2)/20}deg)`;
-  } else {  container.value.style.transform = 'none' }
+export default {
+  name: 'App',
+  components: {
+    Avatar,
+    Education,
+    Experience,
+    Info,
+    Interests,
+    Skills,
+    Languages
+  },
+  setup() {
+    const effect3d = ref(false)
+    const container = ref(null)
+    function rotate(e) {
+      if (effect3d.value) {
+        container.value.style.transform = `rotateX(${(innerHeight/2-e.y)/20}deg) rotateY(${(e.x-innerWidth/2)/20}deg)`;
+      } else {  container.value.style.transform = 'none' }
+    }
+    function none() { container.value.style.transform = 'none' }
+    return {
+      effect3d,
+      container,
+      rotate,
+      none
+    }
+  }
 }
-function none() { container.value.style.transform = 'none' }
 </script>

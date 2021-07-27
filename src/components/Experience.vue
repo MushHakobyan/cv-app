@@ -12,15 +12,21 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
-const experience = ref([
-  {
-    id: 1,
-    title: 'Front-End Developer',
-    where: 'Iguan Systems LLC',
-    date: '02/2021 - now',
-    city: 'Erevan'
+export default {
+  name: 'Experience',
+  setup() {
+    const experience = ref([
+      {
+        id: 1,
+        title: 'Front-End Developer',
+        where: 'Iguan Systems LLC',
+        date: '02/2021 - now',
+        city: 'Erevan'
+      }
+    ])
+    return { experience }
   }
-])
+}
 </script>

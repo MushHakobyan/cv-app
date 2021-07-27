@@ -12,27 +12,33 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
-const education = ref([
-  {
-    id: 1,
-    title: 'Mathematical Simulator',
-    where: 'Armenian State University of Economics',
-    date: '09/2012 - 05/2018',
-    city: 'Erevan'
-  }, {
-    id: 2,
-    title: 'Front End Development',
-    where: 'Basic It Center',
-    date: '05/2019 - 12/2019',
-    city: 'Erevan'
-  }, {
-    id: 3,
-    title: 'Web Development',
-    where: 'Matemat',
-    date: '12/2019 - 03/2020',
-    city: 'Erevan'
+export default {
+  namr: 'Education',
+  setup() {
+    const education = ref([
+      {
+        id: 1,
+        title: 'Mathematical Simulator',
+        where: 'Armenian State University of Economics',
+        date: '09/2012 - 05/2018',
+        city: 'Erevan'
+      }, {
+        id: 2,
+        title: 'Front End Development',
+        where: 'Basic It Center',
+        date: '05/2019 - 12/2019',
+        city: 'Erevan'
+      }, {
+        id: 3,
+        title: 'Web Development',
+        where: 'Matemat',
+        date: '12/2019 - 03/2020',
+        city: 'Erevan'
+      }
+    ])
+    return { education }
   }
-])
+}
 </script>

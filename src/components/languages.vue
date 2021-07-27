@@ -8,21 +8,27 @@
     </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
-const langs = ref([
-  {
-    id: 1,
-    name: 'Armenian',
-    level: 'Full Professional Proficiency',
-  }, {
-    id: 2,
-    name: 'English',
-    level: 'Professional Working Proficiency'
-  }, {
-    id: 3,
-    name: 'Russian',
-    level: 'Limited Working Proficiency'
+export default {
+  name: 'Languages',
+  setup() {
+    const langs = ref([
+      {
+        id: 1,
+        name: 'Armenian',
+        level: 'Full Professional Proficiency',
+      }, {
+        id: 2,
+        name: 'English',
+        level: 'Professional Working Proficiency'
+      }, {
+        id: 3,
+        name: 'Russian',
+        level: 'Limited Working Proficiency'
+      }
+    ])
+    return { langs }
   }
-])
+}
 </script>
